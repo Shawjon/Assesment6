@@ -13,5 +13,21 @@ namespace Assesment6.App_Start.Controllers
         {
             return View();
         }
+        public ActionResult RSVP()
+        {
+            return View();
+        }
+        public ActionResult Summary()
+        {
+            return View();
+        }
+        public ActionResult Dish()
+        {
+            return View();
+        }
+        public ActionResult DishSummary()
+        {
+            return View();
+        }
     }
 }
