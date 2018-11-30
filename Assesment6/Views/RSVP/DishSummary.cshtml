@@ -5,5 +5,10 @@
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-<h2>Hello @Model.Name, the dish you are bringing is @Model.DishName</h2>
+<h2>Thank you for your submission @Model.Name, the dish you are bringing is @Model.DishName</h2>
+<h4>@Model.DishDescription </h4>
+@if(Model.Dietary!="N/A")
+{
+    <h5>This dish is @Model.Dietary</h5>
+}
 
