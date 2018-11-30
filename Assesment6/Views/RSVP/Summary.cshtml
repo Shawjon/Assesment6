@@ -4,5 +4,23 @@
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-<h2>Hello @Model.FirstName</h2>
+@if (Model.Attending == false)
+{
+    <h2>@Model.FirstName Thank you for visiting the site, maybe we will see you next year</h2>
+
+}
+else if (Model.Guest != null)
+{
+    <h2>Thank you for registering, @Model.FirstName @Model.LastName</h2>
+    <h3>You will be attending the Holiday Party on @Model.DateAttending</h3>
+    <h3>Your email used to RSVP is @Model.Email</h3>
+    <h3>We are excited to see you and @Model.Guest at the party!</h3>
+
+}
+else
+{
+    <h2>Thank you for registering, @Model.FirstName @Model.LastName</h2>
+    <h3>You will be attending the Holiday Party on @Model.DateAttending</h3>
+    <h3>Your email used to RSVP is @Model.Email</h3>
+}
 

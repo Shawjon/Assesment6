@@ -9,19 +9,24 @@ namespace Assesment6.App_Start.Controllers
 {
     public class RSVPController : Controller
     {
-        // GET: RSVP
+     
         public ActionResult Index()
         {
             return View();
         }
         public ActionResult RSVP()
         {
+            
             return View();
         }
+       
         public ActionResult Summary(Person person)
         {
+           
             return View(person);
         }
+            
+        
         public ActionResult Dish()
         {
             return View();
