@@ -1,8 +1,9 @@
-﻿
+﻿@model Assesment6.Models.Dish
+
 @{
     ViewBag.Title = "DishSummary";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-<h2>DishSummary</h2>
+<h2>Hello @Model.Name, the dish you are bringing is @Model.DishName</h2>
 

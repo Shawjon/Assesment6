@@ -12,11 +12,12 @@ namespace Assesment6.Models
         {
         }
 
-        public Person(string firstName, string lastName, string email, string dateAttending)
+        public Person(string firstName, string lastName, string email,bool attending, string dateAttending)
         {
             FirstName = firstName;
             LastName = lastName;
             Email = email;
+            Attending = attending;
             DateAttending = dateAttending;
             Guest = null;
         }
@@ -24,6 +25,7 @@ namespace Assesment6.Models
         public string FirstName { get; set; }
         public string LastName { get; set; }
         public string Email { get; set; }
+        public bool Attending { get; set; }
         public string DateAttending { get; set; }
         public string Guest { get; set; }
        

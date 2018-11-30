@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Assesment6.Models;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -17,17 +18,17 @@ namespace Assesment6.App_Start.Controllers
         {
             return View();
         }
-        public ActionResult Summary()
+        public ActionResult Summary(Person person)
         {
-            return View();
+            return View(person);
         }
         public ActionResult Dish()
         {
             return View();
         }
-        public ActionResult DishSummary()
+        public ActionResult DishSummary(Dish dish)
         {
-            return View();
+            return View(dish);
         }
     }
 }
